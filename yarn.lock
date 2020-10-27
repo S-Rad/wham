@@ -5026,6 +5026,11 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
+fontsource-mountains-of-christmas@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/fontsource-mountains-of-christmas/-/fontsource-mountains-of-christmas-3.0.5.tgz#cfd0629d3c01624a9fb6cbd408dc563455b3de0c"
+  integrity sha512-vuRoJt+i7MCF6C6b+2C2vNvxGoT5HtitWGNyClC6o6DpvtBGgDGAy1t51NsNDoPNplhjqKJ9lgTX/kxBwBWLEg==
+
 for-in@^0.1.3:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"

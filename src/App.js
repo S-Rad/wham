@@ -9,7 +9,12 @@ function App() {
             flexDirection="column"
             alignItems="center"
             minHeight="100vh"
-            style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover' }}
+            style={{
+                backgroundImage: `url(${background})`,
+                backgroundSize: 'cover',
+                fontFamily: "'Mountains of Christmas', cursive",
+                fontSize: '50px',
+            }}
         >
             <Box minHeight="100vh" display="flex" alignItems="center">
                 <Box display="flex" width="80vw" flexWrap="wrap">
