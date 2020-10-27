@@ -1,4 +1,3 @@
-import './App.css'
 import Door from './Door.js'
 
 function App() {

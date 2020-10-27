@@ -1,10 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import { CssBaseline } from '@material-ui/core'
 
 ReactDOM.render(
-  <App />,
+    <>
+        <CssBaseline />
+        <App />
+    </>,
 
-  document.getElementById("root")
-);
+    document.getElementById('root')
+)
