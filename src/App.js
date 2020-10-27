@@ -11,10 +11,12 @@ function App() {
             minHeight="100vh"
             style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover' }}
         >
-            <Box display="flex" width="80vw" flexWrap="wrap">
-                {[...Array(24).keys()].map(day => (
-                    <Door day={day + 1} />
-                ))}
+            <Box minHeight="100vh" display="flex" alignItems="center">
+                <Box display="flex" width="80vw" flexWrap="wrap">
+                    {[...Array(24).keys()].map(day => (
+                        <Door day={day + 1} />
+                    ))}
+                </Box>
             </Box>
         </Box>
     )
