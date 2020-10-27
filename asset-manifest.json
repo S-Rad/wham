@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.js": "/wham/static/js/main.9a8d1852.chunk.js",
-    "main.js.map": "/wham/static/js/main.9a8d1852.chunk.js.map",
+    "main.js": "/wham/static/js/main.358340ee.chunk.js",
+    "main.js.map": "/wham/static/js/main.358340ee.chunk.js.map",
     "runtime-main.js": "/wham/static/js/runtime-main.1525e49f.js",
     "runtime-main.js.map": "/wham/static/js/runtime-main.1525e49f.js.map",
-    "static/js/2.adb3726c.chunk.js": "/wham/static/js/2.adb3726c.chunk.js",
-    "static/js/2.adb3726c.chunk.js.map": "/wham/static/js/2.adb3726c.chunk.js.map",
+    "static/css/2.937d1682.chunk.css": "/wham/static/css/2.937d1682.chunk.css",
+    "static/js/2.227e45fd.chunk.js": "/wham/static/js/2.227e45fd.chunk.js",
+    "static/js/2.227e45fd.chunk.js.map": "/wham/static/js/2.227e45fd.chunk.js.map",
     "index.html": "/wham/index.html",
-    "static/js/2.adb3726c.chunk.js.LICENSE.txt": "/wham/static/js/2.adb3726c.chunk.js.LICENSE.txt",
-    "static/media/background-main.bd32e6bc.jpg": "/wham/static/media/background-main.bd32e6bc.jpg"
+    "static/css/2.937d1682.chunk.css.map": "/wham/static/css/2.937d1682.chunk.css.map",
+    "static/js/2.227e45fd.chunk.js.LICENSE.txt": "/wham/static/js/2.227e45fd.chunk.js.LICENSE.txt",
+    "static/media/background-main.bd32e6bc.jpg": "/wham/static/media/background-main.bd32e6bc.jpg",
+    "static/media/index.css": "/wham/static/media/mountains-of-christmas-latin-400-normal.3e90844a.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.1525e49f.js",
-    "static/js/2.adb3726c.chunk.js",
-    "static/js/main.9a8d1852.chunk.js"
+    "static/css/2.937d1682.chunk.css",
+    "static/js/2.227e45fd.chunk.js",
+    "static/js/main.358340ee.chunk.js"
   ]
 }
