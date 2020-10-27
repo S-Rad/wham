@@ -13,9 +13,6 @@ jobs:
         run: |
           yarn
           npm run build
-      - name: 📖 Test
-        run: |
-          npm run test
       - name: 🚀 Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
