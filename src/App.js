@@ -3,7 +3,9 @@ import Door from './Door.js'
 function App() {
     return (
         <div className="App">
-            <Door day={0} />
+            {[...Array(24).keys()].map(day => (
+                <Door day={day + 1} />
+            ))}
         </div>
     )
 }
