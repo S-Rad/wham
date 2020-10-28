@@ -4,10 +4,14 @@ import background from './assets/background-main.jpg'
 import Snowflakes from './Snowflakes'
 import CursorTrail from './CursorTrail'
 
-const importAll = r => r.keys().map(r)
+const importAll = r => {
+    return r.keys().map(r)
+}
 
-const images = importAll(require.context('./assets/days/', false, /\.(png|jpe?g|svg)$/))
+const images = importAll(require.context('./assets/days', false, /\.(png|jpe?g|svg)$/)).map(obj => obj.default)
+
 console.log(images)
+console.log(background)
 const App = () => {
     return (
         <Box

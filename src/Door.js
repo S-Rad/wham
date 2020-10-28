@@ -11,7 +11,7 @@ const Door = ({ day, imagepath }) => {
                 </Box>
             </Box>
             <Dialog open={open} onClose={e => setOpen(false)} onClick={e => setOpen(false)}>
-                Hello World
+                <img src={imagepath} alt="Ein kleines weihnachtliches Bildchen." />
             </Dialog>
         </>
     )
