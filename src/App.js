@@ -3,7 +3,7 @@ import { Box } from '@material-ui/core'
 import background from './assets/background-main.jpg'
 import Snowflakes from './Snowflakes'
 
-function App() {
+const App = () => {
     return (
         <Box
             display="flex"
