@@ -4,6 +4,10 @@ import background from './assets/background-main.jpg'
 import Snowflakes from './Snowflakes'
 import CursorTrail from './CursorTrail'
 
+const importAll = r => r.keys().map(r)
+
+const images = importAll(require.context('./assets/days/', false, /\.(png|jpe?g|svg)$/))
+console.log(images)
 const App = () => {
     return (
         <Box
@@ -20,10 +24,10 @@ const App = () => {
         >
             <Snowflakes />
             <CursorTrail />
-            <Box minHeight="100vh" display="flex" alignItems="center">
+            <Box minHeight="100vh" display="flex" alignItems="center" zIndex="1">
                 <Box display="flex" width="80vw" flexWrap="wrap">
                     {[...Array(24).keys()].map(day => (
-                        <Door day={day + 1} />
+                        <Door day={day + 1} imagepath={images[day]} />
                     ))}
                 </Box>
             </Box>

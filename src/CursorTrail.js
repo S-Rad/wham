@@ -94,10 +94,7 @@ const CursorTrail = () => {
                             enable: true,
                             mode: 'trail',
                         },
-                        onclick: {
-                            enable: true,
-                            mode: 'push',
-                        },
+
                         resize: true,
                     },
                     modes: {
