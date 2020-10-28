@@ -1,6 +1,7 @@
-import Door from './Door.js'
+import Door from './Door'
 import { Box } from '@material-ui/core'
 import background from './assets/background-main.jpg'
+import Snowflakes from './Snowflakes'
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 fontSize: '50px',
             }}
         >
+            <Snowflakes />
             <Box minHeight="100vh" display="flex" alignItems="center">
                 <Box display="flex" width="80vw" flexWrap="wrap">
                     {[...Array(24).keys()].map(day => (

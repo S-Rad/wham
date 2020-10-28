@@ -4,7 +4,6 @@ import App from './App'
 import { CssBaseline } from '@material-ui/core'
 
 import 'fontsource-mountains-of-christmas'
-import './sparkle'
 
 ReactDOM.render(
     <>
