@@ -24,12 +24,18 @@ const Snowflakes = () => {
                     },
 
                     move: {
-                        direction: 'down',
                         enable: true,
-                        outMode: 'bounce',
-                        random: false,
-                        speed: 6,
+                        speed: 5,
+                        direction: 'bottom',
+                        random: true,
                         straight: false,
+                        out_mode: 'out',
+                        bounce: false,
+                        attract: {
+                            enable: true,
+                            rotateX: 300,
+                            rotateY: 1200,
+                        },
                     },
                     number: {
                         density: {
@@ -39,14 +45,33 @@ const Snowflakes = () => {
                         value: 200,
                     },
                     opacity: {
-                        value: 0.5,
+                        value: 0.7,
+                        random: false,
+                        anim: {
+                            enable: false,
+                            speed: 1,
+                            opacity_min: 0.1,
+                            sync: false,
+                        },
                     },
                     shape: {
-                        type: 'circle',
+                        type: 'image',
+                        stroke: {
+                            width: 7,
+                            color: '#fff',
+                        },
+                        polygon: {
+                            nb_sides: 5,
+                        },
+                        image: {
+                            src: 'http://www.dynamicdigital.us/wp-content/uploads/2013/02/starburst_white_300_drop_2.png',
+                            width: 100,
+                            height: 100,
+                        },
                     },
                     size: {
                         random: true,
-                        value: 5,
+                        value: 7,
                     },
                 },
                 detectRetina: true,
