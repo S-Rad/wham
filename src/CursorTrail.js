@@ -13,7 +13,7 @@ const useStyles = makeStyles({
 })
 
 const CursorTrail = () => {
-    const classes = useStyles()
+    useStyles()
     return (
         <Particles
             id="cursortrail"

@@ -13,7 +13,7 @@ const useStyles = makeStyles({
 })
 
 const Snowflakes = () => {
-    const classes = useStyles()
+    useStyles()
     return (
         <Particles
             id="snowflakes"

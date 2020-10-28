@@ -10,8 +10,6 @@ const importAll = r => {
 
 const images = importAll(require.context('./assets/days', false, /\.(png|jpe?g|svg)$/)).map(obj => obj.default)
 
-console.log(images)
-console.log(background)
 const App = () => {
     return (
         <Box
