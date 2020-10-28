@@ -3,7 +3,6 @@ import { useState } from 'react'
 
 const Door = ({ day, imagepath }) => {
     const [open, setOpen] = useState(false)
-    console.log(open)
     return (
         <>
             <Box height="100px" width="100px" display="flex" flexDirection="column" alignItems="center" onClick={e => setOpen(true)}>

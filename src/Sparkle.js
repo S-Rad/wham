@@ -1,14 +1,8 @@
 ;(function () {
-    'use strict'
-
     var i,
         j,
-        width,
-        height,
         particle,
-        numParticles = 0,
         allParticles = [],
-        delay,
         fade = false,
         fadeCount,
         sprites = [0, 6, 13, 20],
@@ -50,7 +44,6 @@
         canvasData[i].wrapper.appendChild(tCanvas)
         var tContext = tCanvas.getContext('2d')
         canvasData[i].context = tContext
-        numParticles += canvasData[i].numParticles
         for (j = 0; j < canvasData[i].colours.length; j++) colours[canvasData[i].colours[j]] = canvasData[i].colours[j]
     }
 
@@ -62,7 +55,6 @@
             spritesheets[colours[key]] = spritesheet
         }
     } else {
-        var spritesheet = new Image()
         spritesheet.src = datauri
         spritesheets['FFFFFF'] = spritesheet
     }
@@ -77,19 +69,19 @@
 
     function makeParticle(h, w, c, s) {
         var _p = {}
-        ;(_p.position = {
+        _p.position = {
             x: Math.floor(Math.random() * w),
             y: Math.floor(Math.random() * h),
-        }),
-            (_p.style = sprites[Math.floor(Math.random() * sprites.length)]),
-            (_p.delta = {
-                x: Math.floor(Math.random() * 1000) - 500,
-                y: Math.floor(Math.random() * 1000) - 500,
-            }),
-            (_p.speed = s),
-            (_p.size = parseFloat((Math.random() * 2).toFixed(2))),
-            (_p.opacity = Math.random()),
-            (_p.sheet = c[Math.floor(Math.random() * c.length)])
+        }
+        _p.style = sprites[Math.floor(Math.random() * sprites.length)]
+        _p.delta = {
+            x: Math.floor(Math.random() * 1000) - 500,
+            y: Math.floor(Math.random() * 1000) - 500,
+        }
+        _p.speed = s
+        _p.size = parseFloat((Math.random() * 2).toFixed(2))
+        _p.opacity = Math.random()
+        _p.sheet = c[Math.floor(Math.random() * c.length)]
         return _p
     }
 
@@ -154,17 +146,7 @@
         }
     }
 
-    function animate() {
-        updateparticle()
-        drawparticles()
-
-        if (fade) {
-            if (--fadeCount >= 0) requestAnimFrame(animate)
-        } else requestAnimFrame(animate)
-    }
-    delay = setTimeout(animate, 60)
-
-    window.requestAnimFrame = (function () {
+    const requestAnimFrame = (function () {
         return (
             window.requestAnimationFrame ||
             window.webkitRequestAnimationFrame ||
@@ -176,6 +158,16 @@
             }
         )
     })()
+
+    function animate() {
+        updateparticle()
+        drawparticles()
+
+        if (fade) {
+            if (--fadeCount >= 0) requestAnimFrame(animate)
+        } else requestAnimFrame(animate)
+    }
+    setTimeout(animate, 60)
 
     function createCanvas(id, w, h) {
         var canvas = document.createElement('canvas')
