@@ -8,8 +8,17 @@ const useStyles = makeStyles({
     },
 
     text: {
-        color: 'red',
-        '&:hover': { color: 'blue' },
+        color: 'white',
+        textShadow: `0 0 5px red`,
+        '&:hover': {
+            textShadow: `0 0 5px red,
+              0 0 10px #FFD733,
+              0 0 20px #FFD733,
+              0 0 40px #FFD733,
+              0 0 60px #FFD733,
+              0 0 80px #FFD733,
+              0 0 100px #FFD733;`,
+        },
     },
 })
 
