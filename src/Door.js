@@ -11,12 +11,10 @@ const useStyles = makeStyles({
 const Door = ({ day, imagepath }) => {
     const [open, setOpen] = useState(false)
     const classes = useStyles()
-    console.log(useStyles())
-    console.log(classes)
     return (
         <>
             <Box height="100px" width="100px" display="flex" flexDirection="column" alignItems="center" onClick={e => setOpen(true)}>
-                <Box display="flex" height="100%" alignItems="center">
+                <Box display="flex" height="100%" alignItems="center" >
                     {day}
                 </Box>
             </Box>

@@ -38,7 +38,7 @@ const App = () => {
                 <Box display="flex" flexDirection="column" alignItems="center">
                     <Box display="flex" width="80vw" flexWrap="wrap">
                         {[8, 14, 23, 24, 3, 4, 12, 15, 2, 20, 19, 13, 21, 7, 11, 10, 16, 5, 9, 1, 17, 6, 22, 18].map(day => (
-                            <Door day={day + 1} imagepath={images[day]} />
+                            <Door key={day} day={day} imagepath={images[day]} />
                         ))}
                     </Box>
                     <YouTube videoId="E8gmARGvPlI" opts={{ width, playerVars: { autoplay: '1' } }} />
