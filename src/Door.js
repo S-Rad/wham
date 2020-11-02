@@ -6,6 +6,11 @@ const useStyles = makeStyles({
     dialog: {
         backgroundColor: 'transparent',
     },
+
+    text: {
+        color: 'red',
+        '&:hover': { color: 'blue' },
+    },
 })
 
 const Door = ({ day, imagepath }) => {
@@ -14,7 +19,7 @@ const Door = ({ day, imagepath }) => {
     return (
         <>
             <Box height="100px" width="100px" display="flex" flexDirection="column" alignItems="center" onClick={e => setOpen(true)}>
-                <Box display="flex" height="100%" alignItems="center" >
+                <Box display="flex" height="100%" alignItems="center" className={classes.text}>
                     {day}
                 </Box>
             </Box>
