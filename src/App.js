@@ -37,7 +37,7 @@ const App = () => {
             <Box minHeight="100vh" display="flex" alignItems="center" zIndex="1">
                 <Box display="flex" flexDirection="column" alignItems="center">
                     <Box display="flex" width="80vw" flexWrap="wrap">
-                        {[...Array(24).keys()].map(day => (
+                        {[8, 14, 23, 24, 3, 4, 12, 15, 2, 20, 19, 13, 21, 7, 11, 10, 16, 5, 9, 1, 17, 6, 22, 18].map(day => (
                             <Door day={day + 1} imagepath={images[day]} />
                         ))}
                     </Box>

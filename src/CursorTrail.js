@@ -28,7 +28,7 @@ const CursorTrail = () => {
                         },
                     },
                     color: {
-                        value: '#CFA240',
+                        value: '#C0C0C0',
                     },
                     shape: {
                         type: 'circle',
