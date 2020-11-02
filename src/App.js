@@ -3,6 +3,7 @@ import { Box } from '@material-ui/core'
 import background from './assets/background-main.jpg'
 import Snowflakes from './Snowflakes'
 import CursorTrail from './CursorTrail'
+import YouTube from 'react-youtube'
 
 const importAll = r => {
     return r.keys().map(r)
@@ -27,10 +28,13 @@ const App = () => {
             <Snowflakes />
             <CursorTrail />
             <Box minHeight="100vh" display="flex" alignItems="center" zIndex="1">
-                <Box display="flex" width="80vw" flexWrap="wrap">
-                    {[...Array(24).keys()].map(day => (
-                        <Door day={day + 1} imagepath={images[day]} />
-                    ))}
+                <Box display="flex" flexDirection="column" alignItems="center">
+                    <Box display="flex" width="80vw" flexWrap="wrap">
+                        {[...Array(24).keys()].map(day => (
+                            <Door day={day + 1} imagepath={images[day]} />
+                        ))}
+                    </Box>
+                    <YouTube videoId="E8gmARGvPlI" />
                 </Box>
             </Box>
         </Box>
