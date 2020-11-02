@@ -4,7 +4,7 @@ import background from './assets/background-main.jpg'
 import Snowflakes from './Snowflakes'
 import CursorTrail from './CursorTrail'
 import YouTube from 'react-youtube'
-
+import { useWindowWidth } from '@react-hook/window-size'
 
 const importAll = r => {
     return r.keys().map(r)
@@ -13,6 +13,12 @@ const importAll = r => {
 const images = importAll(require.context('./assets/days', false, /\.(png|jpe?g|svg)$/)).map(obj => obj.default)
 
 const App = () => {
+    const viewportWidth = useWindowWidth()
+    const maxWidth = 640
+    let width = viewportWidth
+    if (viewportWidth > maxWidth) {
+        width = maxWidth - 5
+    }
     return (
         <Box
             display="flex"
@@ -35,7 +41,7 @@ const App = () => {
                             <Door day={day + 1} imagepath={images[day]} />
                         ))}
                     </Box>
-                    <YouTube videoId="E8gmARGvPlI" />
+                    <YouTube videoId="E8gmARGvPlI" opts={{ width, playerVars: { autoplay: '1' } }} />
                 </Box>
             </Box>
         </Box>
