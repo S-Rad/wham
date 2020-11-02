@@ -41,7 +41,7 @@ const App = () => {
                             <Door key={day} day={day} imagepath={images[day]} />
                         ))}
                     </Box>
-                    <YouTube videoId="E8gmARGvPlI" opts={{ width, playerVars: { autoplay: '1' } }} />
+                    <YouTube videoId="E8gmARGvPlI" opts={{ width }} />
                 </Box>
             </Box>
         </Box>
