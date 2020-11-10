@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/wham/static/js/main.9301bd0d.chunk.js",
-    "main.js.map": "/wham/static/js/main.9301bd0d.chunk.js.map",
+    "main.js": "/wham/static/js/main.c5b922ee.chunk.js",
+    "main.js.map": "/wham/static/js/main.c5b922ee.chunk.js.map",
     "runtime-main.js": "/wham/static/js/runtime-main.1525e49f.js",
     "runtime-main.js.map": "/wham/static/js/runtime-main.1525e49f.js.map",
     "static/css/2.937d1682.chunk.css": "/wham/static/css/2.937d1682.chunk.css",
@@ -34,13 +34,13 @@
     "static/media/22.png": "/wham/static/media/22.e466afba.png",
     "static/media/23.png": "/wham/static/media/23.e466afba.png",
     "static/media/24.png": "/wham/static/media/24.e466afba.png",
-    "static/media/background-main.21b93757.jpg": "/wham/static/media/background-main.21b93757.jpg",
+    "static/media/background-main.85a0255e.jpg": "/wham/static/media/background-main.85a0255e.jpg",
     "static/media/index.css": "/wham/static/media/mountains-of-christmas-latin-400-normal.3e90844a.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.1525e49f.js",
     "static/css/2.937d1682.chunk.css",
     "static/js/2.674d8507.chunk.js",
-    "static/js/main.9301bd0d.chunk.js"
+    "static/js/main.c5b922ee.chunk.js"
   ]
 }
