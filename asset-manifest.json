@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/wham/static/js/main.05ea8128.chunk.js",
-    "main.js.map": "/wham/static/js/main.05ea8128.chunk.js.map",
+    "main.js": "/wham/static/js/main.02148639.chunk.js",
+    "main.js.map": "/wham/static/js/main.02148639.chunk.js.map",
     "runtime-main.js": "/wham/static/js/runtime-main.1525e49f.js",
     "runtime-main.js.map": "/wham/static/js/runtime-main.1525e49f.js.map",
     "static/css/2.937d1682.chunk.css": "/wham/static/css/2.937d1682.chunk.css",
@@ -10,7 +10,15 @@
     "index.html": "/wham/index.html",
     "static/css/2.937d1682.chunk.css.map": "/wham/static/css/2.937d1682.chunk.css.map",
     "static/js/2.5f8083db.chunk.js.LICENSE.txt": "/wham/static/js/2.5f8083db.chunk.js.LICENSE.txt",
-    "static/media/1.png": "/wham/static/media/1.17dcce3e.png",
+    "static/media/01.png": "/wham/static/media/01.17dcce3e.png",
+    "static/media/02.png": "/wham/static/media/02.e466afba.png",
+    "static/media/03.png": "/wham/static/media/03.b59af50c.png",
+    "static/media/04.png": "/wham/static/media/04.e466afba.png",
+    "static/media/05.png": "/wham/static/media/05.e466afba.png",
+    "static/media/06.png": "/wham/static/media/06.e466afba.png",
+    "static/media/07.png": "/wham/static/media/07.e466afba.png",
+    "static/media/08.png": "/wham/static/media/08.e466afba.png",
+    "static/media/09.png": "/wham/static/media/09.e466afba.png",
     "static/media/10.png": "/wham/static/media/10.e466afba.png",
     "static/media/11.png": "/wham/static/media/11.e466afba.png",
     "static/media/12.png": "/wham/static/media/12.e466afba.png",
@@ -21,19 +29,11 @@
     "static/media/17.png": "/wham/static/media/17.e466afba.png",
     "static/media/18.png": "/wham/static/media/18.e466afba.png",
     "static/media/19.png": "/wham/static/media/19.e466afba.png",
-    "static/media/2.png": "/wham/static/media/2.e466afba.png",
     "static/media/20.png": "/wham/static/media/20.e466afba.png",
     "static/media/21.png": "/wham/static/media/21.e466afba.png",
     "static/media/22.png": "/wham/static/media/22.e466afba.png",
     "static/media/23.png": "/wham/static/media/23.e466afba.png",
     "static/media/24.png": "/wham/static/media/24.e466afba.png",
-    "static/media/3.png": "/wham/static/media/3.b59af50c.png",
-    "static/media/4.png": "/wham/static/media/4.e466afba.png",
-    "static/media/5.png": "/wham/static/media/5.e466afba.png",
-    "static/media/6.png": "/wham/static/media/6.e466afba.png",
-    "static/media/7.png": "/wham/static/media/7.e466afba.png",
-    "static/media/8.png": "/wham/static/media/8.e466afba.png",
-    "static/media/9.png": "/wham/static/media/9.e466afba.png",
     "static/media/background-main.bd32e6bc.jpg": "/wham/static/media/background-main.bd32e6bc.jpg",
     "static/media/index.css": "/wham/static/media/mountains-of-christmas-latin-400-normal.3e90844a.woff2"
   },
@@ -41,6 +41,6 @@
     "static/js/runtime-main.1525e49f.js",
     "static/css/2.937d1682.chunk.css",
     "static/js/2.5f8083db.chunk.js",
-    "static/js/main.05ea8128.chunk.js"
+    "static/js/main.02148639.chunk.js"
   ]
 }
