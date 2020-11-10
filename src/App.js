@@ -43,7 +43,7 @@ const App = () => {
                             <Door key={day} day={day} imagepath={images[day - 1]} />
                         ))}
                     </Box>
-                    <YouTube videoId="E8gmARGvPlI" opts={{ width }} />
+                   
                 </Box>
             </Box>
         </Box>
