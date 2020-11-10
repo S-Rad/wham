@@ -33,7 +33,7 @@ const Door = ({ day, imagepath }) => {
                 </Box>
             </Box>
             <Dialog open={open} onClose={e => setOpen(false)} onClick={e => setOpen(false)} classes={{ paper: classes.dialog }}>
-                <img src={imagepath} alt="Ein kleines weihnachtliches Bildchen." />
+                <img src={imagepath} style={{ objectFit: 'scale-down' }} alt="Ein kleines weihnachtliches Bildchen." />
             </Dialog>
         </>
     )
