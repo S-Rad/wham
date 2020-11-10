@@ -12,6 +12,8 @@ const importAll = r => {
 
 const images = importAll(require.context('./assets/days', false, /\.(png|jpe?g|svg)$/)).map(obj => obj.default)
 
+console.log(images)
+
 const App = () => {
     const viewportWidth = useWindowWidth()
     const maxWidth = 640
@@ -38,7 +40,7 @@ const App = () => {
                 <Box display="flex" flexDirection="column" alignItems="center">
                     <Box display="flex" width="80vw" flexWrap="wrap">
                         {[8, 14, 23, 24, 3, 4, 12, 15, 2, 20, 19, 13, 21, 7, 11, 10, 16, 5, 9, 1, 17, 6, 22, 18].map(day => (
-                            <Door key={day} day={day} imagepath={images[day]} />
+                            <Door key={day} day={day} imagepath={images[day - 1]} />
                         ))}
                     </Box>
                     <YouTube videoId="E8gmARGvPlI" opts={{ width }} />
