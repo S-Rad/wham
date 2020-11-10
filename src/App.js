@@ -3,8 +3,6 @@ import { Box } from '@material-ui/core'
 import background from './assets/background-main.jpg'
 import Snowflakes from './Snowflakes'
 import CursorTrail from './CursorTrail'
-import YouTube from 'react-youtube'
-import { useWindowWidth } from '@react-hook/window-size'
 
 const importAll = r => {
     return r.keys().map(r)
@@ -15,12 +13,6 @@ const images = importAll(require.context('./assets/days', false, /\.(png|jpe?g|s
 console.log(images)
 
 const App = () => {
-    const viewportWidth = useWindowWidth()
-    const maxWidth = 640
-    let width = viewportWidth
-    if (viewportWidth > maxWidth) {
-        width = maxWidth - 5
-    }
     return (
         <Box
             display="flex"
@@ -43,7 +35,6 @@ const App = () => {
                             <Door key={day} day={day} imagepath={images[day - 1]} />
                         ))}
                     </Box>
-                   
                 </Box>
             </Box>
         </Box>
