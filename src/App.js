@@ -22,6 +22,11 @@ const App = () => {
                             fontFamily: "'Mountains of Christmas', cursive",
                             textAlign: 'center',
                         },
+                        h2: {
+                            color: 'white',
+                            fontFamily: "'Mountains of Christmas', cursive",
+                            textAlign: 'center',
+                        },
                     },
                 })
             )}
@@ -34,8 +39,6 @@ const App = () => {
                 style={{
                     backgroundImage: `url(${background})`,
                     backgroundSize: 'cover',
-                    fontSize: '50px',
-                    color: 'white',
                 }}
             >
                 <Snowflakes />

@@ -1,4 +1,4 @@
-import { Box, Dialog } from '@material-ui/core'
+import { Box, Dialog, Typography } from '@material-ui/core'
 import { useState } from 'react'
 import { makeStyles } from '@material-ui/core'
 
@@ -29,7 +29,7 @@ const Door = ({ day, imagepath }) => {
         <>
             <Box height="100px" width="100px" display="flex" flexDirection="column" alignItems="center" onClick={e => setOpen(true)}>
                 <Box display="flex" height="100%" alignItems="center" className={classes.text}>
-                    {day}
+                    <Typography variant="h2">{day}</Typography>
                 </Box>
             </Box>
             <Dialog
